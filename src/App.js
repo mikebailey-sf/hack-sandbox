@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Modal from './Components/Modal';
+import { Button } from 'reactstrap';
+import people from './data.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor(e){
+    super();
+    this.skipPerson = this.skipPerson.bind(this);
+    this.state = {
+      chat: false,
+      currentPerson: 0
+    };
+  }
+
+  skipPerson(){
+    let newPerson = this.state.currentPerson + 1;
+    if (!people[newPerson]){
+      newPerson = 0;
+    }
+    this.setState({
+      currentPerson: newPerson
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Modal
+          skipPerson = {this.skipPerson}
+          name={people[this.state.currentPerson].name}
+          title={people[this.state.currentPerson].title}
+          bio={people[this.state.currentPerson].bio}
+          image={people[this.state.currentPerson].image}
+        />
+      </div>
+    );
+  }
 }
-
 export default App;

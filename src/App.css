@@ -31,3 +31,54 @@
     transform: rotate(360deg);
   }
 }
+
+.modal-image {
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 8px solid whitesmoke;
+  width:300px;
+  height:300px;
+}
+
+.modal-image-wrapper {
+  margin: 0 auto;
+  width: 300px;
+
+}
+
+.modal-header {
+  background-color:#036475;
+  
+}
+
+.modal-content {
+  background-image: url('https://i.imgur.com/IKt0nCb.png');
+  background-size:500px 235px;
+  background-repeat: no-repeat;
+}
+.modal-footer{
+  margin: 0 auto;
+}
+
+.modal-name {
+  text-align: center;
+}
+
+.modal-name-title {
+  font-weight: bold;
+  font-size:130%;
+}
+
+.modal-footer .btn{
+  width:100px;
+}
+
+.modal-skills div{
+  display:inline;
+  margin:10px;
+}
+
+.modal-skills div img{
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+}
