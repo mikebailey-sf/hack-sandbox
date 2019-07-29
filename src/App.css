@@ -81,4 +81,7 @@
 .modal-skills div img{
   border-radius: 10px;
   border: 2px solid whitesmoke;
+  width: 120px;
+  height: 100px;
+
 }

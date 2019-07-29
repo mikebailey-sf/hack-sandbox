@@ -3,7 +3,7 @@ import './App.css';
 import Modal from './Components/Modal';
 import { Button } from 'reactstrap';
 import people from './data.json';
-
+//https://imgur.com/a/FDsuhAV
 class App extends Component {
 
   constructor(e){

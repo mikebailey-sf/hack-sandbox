@@ -59,9 +59,9 @@ class ModalExample extends React.Component {
           <ModalFooter>
             <div className='modal-skills'>
               <p>Skills</p>
-              <div><img src="http://via.placeholder.com/120" alt=""/></div>
-              <div><img src="http://via.placeholder.com/120" alt=""/></div>
-              <div><img src="http://via.placeholder.com/120" alt=""/></div>
+              <div><img src="https://i.imgur.com/zcrGwoB.jpg" alt=""/></div>
+              <div><img src="https://i.imgur.com/rd1LjI8.jpg" alt=""/></div>
+              <div><img src="https://i.imgur.com/JeWnZHj.png" alt=""/></div>
             </div>
           </ModalFooter>                    
         </Modal>
