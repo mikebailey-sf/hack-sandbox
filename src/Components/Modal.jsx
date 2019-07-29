@@ -23,7 +23,7 @@ class ModalExample extends React.Component {
 
   sendMessage(){
     this.setState(prevState => ({
-      isOpen: true
+      //isOpen: true
     }));  
   }
 
