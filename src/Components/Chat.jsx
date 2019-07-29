@@ -6,7 +6,8 @@ class Chat extends Component {
   constructor() {
     super();
     this.state = {
-      messageList: []
+      messageList: [],
+      isOpen: false
     };
   }
  
@@ -38,6 +39,7 @@ class Chat extends Component {
         onMessageWasSent={this._onMessageWasSent.bind(this)}
         messageList={this.state.messageList}
         showEmoji
+        isOpen={this.state.isOpen}
       />
     </div>)
   }
