@@ -46,7 +46,6 @@ class ModalExample extends React.Component {
           <ModalFooter>
             <Button color="primary" onClick={this.sendMessage}>Message</Button>{' '}
             <Chat 
-              isOpen='true' 
             />
 
             <Button color="secondary" onClick={this.props.skipPerson}>Skip</Button>
